@@ -1,0 +1,163 @@
+@import "compass";
+
+.omfg-headr {
+  max-height: 20em;
+  position: relative;
+  bottom: -6px;
+  -webkit-touch-callout: none;  
+  -webkit-user-select: none;  
+  -khtml-user-select: none;  
+  -moz-user-select: none;  
+  -ms-user-select: none;  
+  user-select: none;
+}
+
+.header_site-slogan {
+  z-index: 10;
+  cursor: pointer;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+  }
+}
+
+img.desaturate {
+  -webkit-filter: grayscale(100%);
+}
+.header-display-screen {
+  cursor: pointer;
+}
+
+@include keyframes(cabin-rotation) {
+  0% {    
+    @include rotate(0deg);
+  } 
+  100% {
+    @include rotate(-360deg);
+  }
+}
+.cabin {
+  @include transform-origin(50% 50% 0);
+  @include animation(0, 30s, cabin-rotation, linear, infinite);
+}
+
+@include keyframes(wheel-rotation) {
+  0% {
+    @include rotate(0deg);
+  } 
+  100% {
+    @include rotate(360deg);
+  }
+}
+.wheel-r {
+  @include transform-origin(50% 50% 0);
+  @include animation(0, 30s, wheel-rotation, linear, infinite);
+}
+
+
+@include keyframes(tower-movement) {
+  0% {
+    @include transform(translateY(0));
+  } 
+  15% {
+    @include transform(translateY(0));
+  }
+  45% {
+    @include transform(translateY(20em));
+  }
+  60% {
+    @include transform(translateY(20em));
+  }
+  100% {
+    @include transform(translateY(0));
+  }
+}
+.tower-viewpoint {
+  @include animation(0, 40s, tower-movement, linear, infinite);
+}
+
+@include keyframes(boat) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+  50% {
+    @include transform(rotate(0.1deg));
+  }
+  100% {
+    @include transform(rotate(0deg));
+  }
+}
+.boat {
+  @include animation(0, 2s, boat, ease-in-out, infinite);
+}
+
+@include keyframes(baloon-flight) {
+  0% {
+    @include transform(translate(-20em, 10em));
+  }
+  12% {
+    @include transform(translate(-7em, 8em));
+  }
+  30% {
+    @include transform(translate(8em, 3em));
+  }  
+  60% {
+    @include transform(translate(58em, 12em));
+  }
+  78% {
+    @include transform(translate(10em, 2em));
+  } 
+  87% {
+    @include transform(translate(-20em, -5em));
+  }
+  100% {
+    @include transform(translate(-20em, 10em));
+  }
+}
+.baloon-flight {
+  @include animation(0, 90s, baloon-flight, ease-in-out, infinite);
+}
+
+@include keyframes(air-baloon) {
+  0% {    
+    @include transform(rotate(0deg));
+  }
+  50% {
+    @include transform(rotate(-1deg));
+  }
+  100% {
+    @include transform(rotate(0deg));
+  }
+}
+.air-baloon {
+  @include animation(0, 3s, air-baloon, ease-in-out, infinite);
+}
+
+@include keyframes(dash) {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1000;
+  }
+}
+.rollercoaster-line {
+  stroke-dasharray: 20, 480;
+  @include animation(0, 6s, dash, ease-in-out, infinite);
+}
+
+g.move-boat {
+  @include transition(all 15s ease-in-out);
+}
+g.right:hover ~ g.move-boat {
+  @include transform(translate(50em, 0));
+}
+g.left:hover ~ g.move-boat {
+  @include transform(translate(-50em, 0));
+}
