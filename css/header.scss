@@ -34,6 +34,31 @@ img.desaturate {
   cursor: pointer;
 }
 
+
+@include keyframes(flipped) {
+ 
+  0% {
+    @include transform(scale(1,1) translate( 0, 0)); 
+  }
+  50% {
+    @include transform(scale(1,1) translate( 0, 0)); 
+  }
+  50.01% {
+    @include transform(scale(-1,1) translate(-154em, 0)); 
+  }
+  99.99%{
+    @include transform(scale(-1,1) translate(-154em, 0)); 
+  }
+  100% {
+    @include transform(scale(1,1) translate( 0, 0)); 
+  }
+}
+
+g.flipped {
+@include animation(flipped 15s ease-in-out infinite);
+}
+
+
 @include keyframes(cabin-rotation) {
   0% {    
     @include rotate(0deg);
@@ -79,7 +104,7 @@ img.desaturate {
   }
 }
 .tower-viewpoint {
-  @include animation(0, 40s, tower-movement, linear, infinite);
+  @include animation(tower-movement 40s linear infinite);
 }
 
 @include keyframes(boat) {
@@ -97,32 +122,34 @@ img.desaturate {
   @include animation(0, 2s, boat, ease-in-out, infinite);
 }
 
+
 @include keyframes(baloon-flight) {
   0% {
-    @include transform(translate(-20em, 10em));
+    @include transform(translate(-40em, 20em));
   }
   12% {
-    @include transform(translate(-7em, 8em));
+    @include transform(translate(-17em, 8em));
   }
   30% {
     @include transform(translate(8em, 3em));
   }  
   60% {
-    @include transform(translate(58em, 12em));
+    @include transform(translate(85em, 25em));
   }
-  78% {
+  82% {
     @include transform(translate(10em, 2em));
   } 
-  87% {
+  93% {
     @include transform(translate(-20em, -5em));
   }
   100% {
-    @include transform(translate(-20em, 10em));
+    @include transform(translate(-40em, 20em));
   }
 }
 .baloon-flight {
-  @include animation(0, 90s, baloon-flight, ease-in-out, infinite);
+  @include animation(baloon-flight 60s ease-in-out infinite);
 }
+
 
 @include keyframes(air-baloon) {
   0% {    
@@ -135,8 +162,9 @@ img.desaturate {
     @include transform(rotate(0deg));
   }
 }
+
 .air-baloon {
-  @include animation(0, 3s, air-baloon, ease-in-out, infinite);
+  @include animation(air-baloon 3s ease-in-out infinite);
 }
 
 @include keyframes(dash) {
@@ -149,15 +177,149 @@ img.desaturate {
 }
 .rollercoaster-line {
   stroke-dasharray: 20, 480;
-  @include animation(0, 6s, dash, ease-in-out, infinite);
+  @include animation(dash 6s ease-in-out infinite);
 }
 
-g.move-boat {
-  @include transition(all 15s ease-in-out);
+
+@include keyframes(skater) {
+  0%, 100%{ 
+   @include transform(translate(30em, 0));     
+  }  
+  50% {
+   @include transform(translate(-30em, 0));
+  }
 }
-g.right:hover ~ g.move-boat {
-  @include transform(translate(50em, 0));
+.omfg-skater {
+  cursor: pointer;
+  @include animation(skater 15s ease-in-out forwards infinite);
 }
-g.left:hover ~ g.move-boat {
-  @include transform(translate(-50em, 0));
+
+
+@include keyframes(santas) {
+  0% { 
+    @include transform(translate(-60px, -12px));
+  }
+  50%  { 
+    @include transform(translate(-60px, -10px));
+  }
+  100% { 
+    @include transform(translate(-60px, -12px));
+   }
+}
+
+@include keyframes(deerone) {
+  0% { 
+    @include transform(translate(0px, 8px));
+  }
+  50%  { 
+    @include transform(translate(0px, 5px));
+  }
+  100% { 
+    @include transform(translate(0px, 8px));
+   }
+}
+
+@include keyframes(deertwo) {
+  0% { 
+    @include transform(translate(30px, 10px));
+  }
+  50%  { 
+    @include transform(translate(30px, 0px));
+  }
+  100% { @include transform(translate(30px, 10px));
+   }
+}
+
+@include keyframes(deerthree) {
+  0% { 
+    @include transform(translate(60px, 12px));
+  }
+  50%  { 
+    @include transform(translate(60px, -5px));
+  }
+  100% { 
+    @include transform(translate(60px, 12px));
+   }
+}
+
+@include keyframes(deerfour) {
+  0% { 
+    @include transform(translate(90px, 16px));
+  }
+  50% { 
+    @include transform(translate(90px, -8px));
+  }
+  100% { 
+    @include transform(translate(90px, 16px));
+   }
+ }
+
+.deer-1 {
+  @include animation(deerone 5s ease-in-out forwards infinite);
+}
+
+.deer-2 {
+  @include animation(deertwo 5s ease-in-out forwards infinite);
+}
+
+.deer-3 {
+  @include animation(deerthree 5s ease-in-out forwards infinite);
+}
+
+.deer-4 {
+  @include animation(deerfour 5s ease-in-out forwards infinite);
+}
+
+.santas {
+  @include animation(santas 5s ease-in-out forwards infinite);
+}
+
+
+@include keyframes(mirrored) {
+    0% { 
+      @include transform(scale(1,1), translate(0em,0));
+   }
+    55% { 
+      @include transform(scale(1,1), translate(0em,0));
+   }
+    56% { 
+      @include transform(scale(-1,1), translate(-110em,0));
+    }
+    100% { 
+      @include transform(scale(-1,1), translate(-110em,0));
+    }
+  }
+
+.mirror {
+  @include animation(60s mirrored linear infinite);
+}
+
+
+
+
+@include keyframes (drop) {
+  0%{
+    @include transform (translate(0, 0));
+   }
+  100%{
+    @include transform (translate(0, 6em));
+   }
+}
+
+
+.hole{ display:none;}
+
+g.omfg-skater-clicked{
+clip-path: url(#clipping);
+  -webkit-animation: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+g.omfg-skater-clicked g.hole{
+display:block;
+}
+
+g.omfg-skater-clicked g.drop{
+  @include animation( drop 0.25s ease-in forwards);
 }
