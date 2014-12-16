@@ -352,113 +352,57 @@ g.flipped {
 
 @-moz-keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -moz-transform: translate(-200em, 10em);
+    transform: translate(-200em, 10em);
   }
-  12% {
-    -moz-transform: translate(-17em, 8em);
-    transform: translate(-17em, 8em);
-  }
-  30% {
-    -moz-transform: translate(8em, 3em);
-    transform: translate(8em, 3em);
-  }
-  60% {
-    -moz-transform: translate(85em, 25em);
-    transform: translate(85em, 25em);
-  }
-  82% {
-    -moz-transform: translate(10em, 2em);
-    transform: translate(10em, 2em);
-  }
-  93% {
-    -moz-transform: translate(-20em, -5em);
-    transform: translate(-20em, -5em);
+  50% {
+    -moz-transform: translate(20em, 6em);
+    transform: translate(20em, 6em);
   }
   100% {
-    -moz-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -moz-transform: translate(200em, 10em);
+    transform: translate(200em, 10em);
   }
 }
 @-webkit-keyframes baloon-flight {
   0% {
-    -webkit-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -webkit-transform: translate(-200em, 10em);
+    transform: translate(-200em, 10em);
   }
-  12% {
-    -webkit-transform: translate(-17em, 8em);
-    transform: translate(-17em, 8em);
-  }
-  30% {
-    -webkit-transform: translate(8em, 3em);
-    transform: translate(8em, 3em);
-  }
-  60% {
-    -webkit-transform: translate(85em, 25em);
-    transform: translate(85em, 25em);
-  }
-  82% {
-    -webkit-transform: translate(10em, 2em);
-    transform: translate(10em, 2em);
-  }
-  93% {
-    -webkit-transform: translate(-20em, -5em);
-    transform: translate(-20em, -5em);
+  50% {
+    -webkit-transform: translate(20em, 6em);
+    transform: translate(20em, 6em);
   }
   100% {
-    -webkit-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -webkit-transform: translate(200em, 10em);
+    transform: translate(200em, 10em);
   }
 }
 @keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-40em, 20em);
-    -ms-transform: translate(-40em, 20em);
-    -webkit-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -moz-transform: translate(-200em, 10em);
+    -ms-transform: translate(-200em, 10em);
+    -webkit-transform: translate(-200em, 10em);
+    transform: translate(-200em, 10em);
   }
-  12% {
-    -moz-transform: translate(-17em, 8em);
-    -ms-transform: translate(-17em, 8em);
-    -webkit-transform: translate(-17em, 8em);
-    transform: translate(-17em, 8em);
-  }
-  30% {
-    -moz-transform: translate(8em, 3em);
-    -ms-transform: translate(8em, 3em);
-    -webkit-transform: translate(8em, 3em);
-    transform: translate(8em, 3em);
-  }
-  60% {
-    -moz-transform: translate(85em, 25em);
-    -ms-transform: translate(85em, 25em);
-    -webkit-transform: translate(85em, 25em);
-    transform: translate(85em, 25em);
-  }
-  82% {
-    -moz-transform: translate(10em, 2em);
-    -ms-transform: translate(10em, 2em);
-    -webkit-transform: translate(10em, 2em);
-    transform: translate(10em, 2em);
-  }
-  93% {
-    -moz-transform: translate(-20em, -5em);
-    -ms-transform: translate(-20em, -5em);
-    -webkit-transform: translate(-20em, -5em);
-    transform: translate(-20em, -5em);
+  50% {
+    -moz-transform: translate(20em, 6em);
+    -ms-transform: translate(20em, 6em);
+    -webkit-transform: translate(20em, 6em);
+    transform: translate(20em, 6em);
   }
   100% {
-    -moz-transform: translate(-40em, 20em);
-    -ms-transform: translate(-40em, 20em);
-    -webkit-transform: translate(-40em, 20em);
-    transform: translate(-40em, 20em);
+    -moz-transform: translate(200em, 10em);
+    -ms-transform: translate(200em, 10em);
+    -webkit-transform: translate(200em, 10em);
+    transform: translate(200em, 10em);
   }
 }
-/* line 147, _header.scss */
+/* line 135, _header.scss */
 .baloon-flight {
-  -moz-animation: baloon-flight 60s ease-in-out infinite;
-  -webkit-animation: baloon-flight 60s ease-in-out infinite;
-  animation: baloon-flight 60s ease-in-out infinite;
+  -moz-animation: baloon-flight 50s ease-in-out infinite;
+  -webkit-animation: baloon-flight 50s ease-in-out infinite;
+  animation: baloon-flight 50s ease-in-out infinite;
 }
 
 @-moz-keyframes air-baloon {
@@ -509,7 +453,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 164, _header.scss */
+/* line 152, _header.scss */
 .air-baloon {
   -moz-animation: air-baloon 3s ease-in-out infinite;
   -webkit-animation: air-baloon 3s ease-in-out infinite;
@@ -540,7 +484,7 @@ g.flipped {
     stroke-dashoffset: 1000;
   }
 }
-/* line 176, _header.scss */
+/* line 164, _header.scss */
 .rollercoaster-line {
   stroke-dasharray: 20, 480;
   -moz-animation: dash 6s ease-in-out infinite;
@@ -582,7 +526,7 @@ g.flipped {
     transform: translate(-30em, 0);
   }
 }
-/* line 190, _header.scss */
+/* line 178, _header.scss */
 .omfg-skater {
   cursor: pointer;
   -moz-animation: skater 15s ease-in-out forwards infinite;
@@ -830,104 +774,39 @@ g.flipped {
     transform: translate(90px, 16px);
   }
 }
-/* line 255, _header.scss */
+/* line 243, _header.scss */
 .deer-1 {
   -moz-animation: deerone 5s ease-in-out forwards infinite;
   -webkit-animation: deerone 5s ease-in-out forwards infinite;
   animation: deerone 5s ease-in-out forwards infinite;
 }
 
-/* line 259, _header.scss */
+/* line 247, _header.scss */
 .deer-2 {
   -moz-animation: deertwo 5s ease-in-out forwards infinite;
   -webkit-animation: deertwo 5s ease-in-out forwards infinite;
   animation: deertwo 5s ease-in-out forwards infinite;
 }
 
-/* line 263, _header.scss */
+/* line 251, _header.scss */
 .deer-3 {
   -moz-animation: deerthree 5s ease-in-out forwards infinite;
   -webkit-animation: deerthree 5s ease-in-out forwards infinite;
   animation: deerthree 5s ease-in-out forwards infinite;
 }
 
-/* line 267, _header.scss */
+/* line 255, _header.scss */
 .deer-4 {
   -moz-animation: deerfour 5s ease-in-out forwards infinite;
   -webkit-animation: deerfour 5s ease-in-out forwards infinite;
   animation: deerfour 5s ease-in-out forwards infinite;
 }
 
-/* line 271, _header.scss */
+/* line 259, _header.scss */
 .santas {
   -moz-animation: santas 5s ease-in-out forwards infinite;
   -webkit-animation: santas 5s ease-in-out forwards infinite;
   animation: santas 5s ease-in-out forwards infinite;
-}
-
-@-moz-keyframes mirrored {
-  0% {
-    -moz-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  55% {
-    -moz-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  56% {
-    -moz-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-  100% {
-    -moz-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-}
-@-webkit-keyframes mirrored {
-  0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  55% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  56% {
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-  100% {
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-}
-@keyframes mirrored {
-  0% {
-    -moz-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  55% {
-    -moz-transform: scale(1, 1);
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  56% {
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-  100% {
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-  }
-}
-/* line 291, _header.scss */
-.mirror {
-  -moz-animation: 60s mirrored linear infinite;
-  -webkit-animation: 60s mirrored linear infinite;
-  animation: 60s mirrored linear infinite;
 }
 
 @-moz-keyframes drop {
@@ -964,12 +843,12 @@ g.flipped {
     transform: translate(0, 6em);
   }
 }
-/* line 308, _header.scss */
+/* line 272, _header.scss */
 .hole {
   display: none;
 }
 
-/* line 310, _header.scss */
+/* line 276, _header.scss */
 g.omfg-skater-clicked {
   clip-path: url(#clipping);
   -webkit-animation: paused;
@@ -978,12 +857,12 @@ g.omfg-skater-clicked {
   animation-play-state: paused;
 }
 
-/* line 317, _header.scss */
+/* line 283, _header.scss */
 g.omfg-skater-clicked g.hole {
   display: block;
 }
 
-/* line 321, _header.scss */
+/* line 287, _header.scss */
 g.omfg-skater-clicked g.drop {
   -moz-animation: drop 0.25s ease-in forwards;
   -webkit-animation: drop 0.25s ease-in forwards;
