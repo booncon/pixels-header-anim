@@ -1,0 +1,85 @@
+@import "compass";
+@import "header";
+
+$px-blue-sky: #B3DBEC;
+$px-blue-dark:  rgb(97, 111, 123);
+$px-white: #fff;
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.region-header { /* Wrapper for any blocks placed in the header region */
+  clear: both; /* Clear the logo */
+  background-color: $px-blue-sky;
+
+  &.night-time {
+    background-color: darken($px-blue-sky, 40%);
+    .block {
+      opacity: 0.88;
+      &:before {
+        opacity: 0.4;
+      }
+    }  
+  }
+
+   &.morning-time {
+    background-color: lighten($px-blue-sky, 20%);
+    .block {
+      opacity: 0.92;
+      &:before {
+        opacity: 0.6;
+      }
+      .header_site-slogan {
+        color: $px-blue-dark;
+      }
+    }
+  }
+
+  .block {
+    position: relative;    
+    padding: 0;
+    text-align: center;
+
+    &:before, &:after {
+      z-index: -1;
+      top: 0;
+      left: 0;
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: 0 4px url(../assets/header-spring-clouds.png) repeat-x;
+      @include background-size(auto 100%);
+    }
+    &:after {
+      z-index: -1;
+      background-image: url(../assets/px_header-background-winter.png);
+    }
+    z-index: 2;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      height: 20em;
+      width: auto;
+      vertical-align: bottom;
+    }
+    .header_site-slogan {
+      // font-family: $helia;
+      position: absolute;
+      top: 0.6em;
+      // margin-left: $zen-gutter-width / 2;
+      color: $px-white;
+      z-index: 5;
+      // @include mobile-landscape-and-below {
+      //   font-size: 1.2em;
+      //   top: 0;
+      // }
+    }
+  }
+}
