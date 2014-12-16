@@ -1,13 +1,7 @@
 .omfg-headr {
   max-height: 20em;
   position: relative;
-  bottom: -6px;
-  -webkit-touch-callout: none;  
-  -webkit-user-select: none;  
-  -khtml-user-select: none;  
-  -moz-user-select: none;  
-  -ms-user-select: none;  
-  user-select: none;
+  bottom: -8px;
 }
 
 .header_site-slogan {
@@ -28,34 +22,10 @@
 img.desaturate {
   -webkit-filter: grayscale(100%);
 }
+
 .header-display-screen {
   cursor: pointer;
 }
-
-
-@include keyframes(flipped) {
- 
-  0% {
-    @include transform(scale(1,1) translate( 0, 0)); 
-  }
-  50% {
-    @include transform(scale(1,1) translate( 0, 0)); 
-  }
-  50.01% {
-    @include transform(scale(-1,1) translate(-154em, 0)); 
-  }
-  99.99%{
-    @include transform(scale(-1,1) translate(-154em, 0)); 
-  }
-  100% {
-    @include transform(scale(1,1) translate( 0, 0)); 
-  }
-}
-
-g.flipped {
-@include animation(flipped 15s ease-in-out infinite);
-}
-
 
 @include keyframes(cabin-rotation) {
   0% {    
@@ -82,7 +52,6 @@ g.flipped {
   @include transform-origin(50% 50% 0);
   @include animation(0, 30s, wheel-rotation, linear, infinite);
 }
-
 
 @include keyframes(tower-movement) {
   0% {
@@ -120,7 +89,6 @@ g.flipped {
   @include animation(0, 2s, boat, ease-in-out, infinite);
 }
 
-
 @include keyframes(baloon-flight) {
   0% {
     @include transform(translate(-200em, 10em));
@@ -135,7 +103,6 @@ g.flipped {
 .baloon-flight {
   @include animation(baloon-flight 40s ease-in-out infinite);
 }
-
 
 @include keyframes(air-baloon) {
   0% {    
@@ -169,17 +136,61 @@ g.flipped {
 
 @include keyframes(skater) {
   0%, 100%{ 
-   @include transform(translate(30em, 0));     
+   @include transform(translate(50em, 0));     
   }  
   50% {
-   @include transform(translate(-30em, 0));
+   @include transform(translate(-50em, 0));
   }
 }
 .omfg-skater {
   cursor: pointer;
-  @include animation(skater 15s ease-in-out forwards infinite);
+  @include animation(skater 22s ease-in-out forwards infinite);
+  .hole {
+    display: none;
+  }
 }
 
+@include keyframes(flipped) {
+  0% {
+    @include transform(scale(1, 1) translate(0, 0)); 
+  }
+  50% {
+    @include transform(scale(1, 1) translate(0, 0)); 
+  }
+  50.01% {
+    @include transform(scale(-1, 1) translate(-154em, 0)); 
+  }
+  100%{
+    @include transform(scale(-1, 1) translate(-154em, 0));
+  }
+}
+
+g.flipped {
+  font-size: 16px;
+  @include animation(flipped 22s ease-in-out infinite);
+}
+
+@include keyframes (drop) {
+  0%{
+    @include transform (translate(0, 0));
+   }
+  100%{
+    @include transform (translate(0, 6em));
+   }
+}
+.omfg-skater-clicked {
+  clip-path: url(#clipping);
+  -webkit-animation: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  .hole {
+    display: block;
+  }
+  .drop {
+    @include animation(drop 0.25s ease-in forwards);
+  }
+}
 
 @include keyframes(santas) {
   0% { 
@@ -258,32 +269,4 @@ g.flipped {
 
 .santas {
   @include animation(santas 5s ease-in-out forwards infinite);
-}
-
-@include keyframes (drop) {
-  0%{
-    @include transform (translate(0, 0));
-   }
-  100%{
-    @include transform (translate(0, 6em));
-   }
-}
-
-.hole {
-  display: none;
-}
-
-g.omfg-skater-clicked {
-  clip-path: url(#clipping);
-  -webkit-animation: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-g.omfg-skater-clicked g.hole {
-  display: block;
-}
-
-g.omfg-skater-clicked g.drop {
-  @include animation(drop 0.25s ease-in forwards);
 }
