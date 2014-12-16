@@ -400,9 +400,9 @@ g.flipped {
 }
 /* line 135, _header.scss */
 .baloon-flight {
-  -moz-animation: baloon-flight 50s ease-in-out infinite;
-  -webkit-animation: baloon-flight 50s ease-in-out infinite;
-  animation: baloon-flight 50s ease-in-out infinite;
+  -moz-animation: baloon-flight 40s ease-in-out infinite;
+  -webkit-animation: baloon-flight 40s ease-in-out infinite;
+  animation: baloon-flight 40s ease-in-out infinite;
 }
 
 @-moz-keyframes air-baloon {
@@ -875,49 +875,56 @@ body {
   margin: 0;
 }
 
-/* line 15, styles.scss */
+/* line 14, styles.scss */
+.header_site-slogan {
+  margin-left: 40px;
+  font-weight: 200;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 20, styles.scss */
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;
   /* Clear the logo */
   background-color: #B3DBEC;
 }
-/* line 19, styles.scss */
+/* line 24, styles.scss */
 .region-header.night-time {
   background-color: #2a83a9;
 }
-/* line 21, styles.scss */
+/* line 26, styles.scss */
 .region-header.night-time .block {
   opacity: 0.88;
 }
-/* line 23, styles.scss */
+/* line 28, styles.scss */
 .region-header.night-time .block:before {
   opacity: 0.4;
 }
-/* line 29, styles.scss */
+/* line 34, styles.scss */
 .region-header.morning-time {
   background-color: white;
 }
-/* line 31, styles.scss */
+/* line 36, styles.scss */
 .region-header.morning-time .block {
   opacity: 0.92;
 }
-/* line 33, styles.scss */
+/* line 38, styles.scss */
 .region-header.morning-time .block:before {
   opacity: 0.6;
 }
-/* line 36, styles.scss */
+/* line 41, styles.scss */
 .region-header.morning-time .block .header_site-slogan {
   color: #616f7b;
 }
-/* line 42, styles.scss */
+/* line 47, styles.scss */
 .region-header .block {
   position: relative;
   padding: 0;
   text-align: center;
   z-index: 2;
 }
-/* line 47, styles.scss */
+/* line 52, styles.scss */
 .region-header .block:before, .region-header .block:after {
   z-index: -1;
   top: 0;
@@ -932,23 +939,23 @@ body {
   -webkit-background-size: auto 100%;
   background-size: auto 100%;
 }
-/* line 58, styles.scss */
+/* line 63, styles.scss */
 .region-header .block:after {
   z-index: -1;
   background-image: url(../assets/px_header-background-winter.png);
 }
-/* line 63, styles.scss */
+/* line 68, styles.scss */
 .region-header .block p {
   margin: 0;
   padding: 0;
 }
-/* line 67, styles.scss */
+/* line 72, styles.scss */
 .region-header .block img {
   height: 20em;
   width: auto;
   vertical-align: bottom;
 }
-/* line 72, styles.scss */
+/* line 77, styles.scss */
 .region-header .block .header_site-slogan {
   position: absolute;
   top: 0.6em;
