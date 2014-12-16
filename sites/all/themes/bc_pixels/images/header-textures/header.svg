@@ -1,7 +1,4 @@
-
-<?xml-stylesheet type="text/css" href="svg.css"?>
-<?xml-script src="animation.js"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 2452 812" style="background: #187097" xml:space="preserve" class="omfg-headr">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 2452 812" xml:space="preserve" class="omfg-headr">
   <defs>
     <clipPath id="clipping">
           <path id="skater-mask" fill="#187097" translate="20" d="M1252.3,702.5c0-1.8-8.2-3.1-18.2-3.1c-10.1,0-18.2,1.5-18.2,3.2l-0.1,69.7c0,1.8,8.2,3.2,18.2,3.2s18.2-1.4,18.2-3.2
@@ -139,7 +136,7 @@
     </g>
   </g>
 
-  <g class="deer-3">
+  <g class="deer-3" transform="translate(60)">
     <g id="legs">
       <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
@@ -180,7 +177,7 @@
     </g>
   </g>
 
-        <g class="deer-4" transform="translate(60)">
+        <g class="deer-4" transform="translate(90)">
     <g id="legs">
       <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
@@ -3618,7 +3615,6 @@
         </g>
       </g>
     </g>
-    <rect class="grey-shadow" x="1352" y="734" fill="#eee" width="71.1" height="70.1"/>
   </g>
   <g class="coffee-cup">
     <path fill="#F3B2C5" d="M1887,609h-81v115.13c0,1.1,1.15,1.87,2.25,1.87h77c1.1,0,1.75-0.77,1.75-1.87V609z"/>
@@ -3720,7 +3716,6 @@
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="1928.75" y1="696.88" x2="1938.44" y2="688.63"/>
   </g>
 </g> 
- <rect x="-19" y="733" fill="#D7E8F6" width="2488" height="133"/>
 
    <rect class="reflection-pink" x="1813" y="734" fill="#eee" width="71.1" height="70.1"/>
     <rect class="reflection-yellow" x="2380" y="734" fill="#eee" width="71.1" height="70.1"/>
@@ -3733,7 +3728,7 @@
 
 
 
-<g id="skater" class="running">	
+<g class="omfg-skater"> 
   <g class="hole">
    <ellipse fill="#187097" cx="1236" cy="772" rx="15" ry="3"/>
   </g>  
