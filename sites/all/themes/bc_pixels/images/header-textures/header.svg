@@ -1,9 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 2452 812"  xml:space="preserve" class="omfg-headr">
   <defs>
     <clipPath id="clipping">
-          <path id="skater-mask" fill="#187097" translate="20" d="M1252.3,702.5c0-1.8-8.2-3.1-18.2-3.1c-10.1,0-18.2,1.5-18.2,3.2l-0.1,69.7c0,1.8,8.2,3.2,18.2,3.2s18.2-1.4,18.2-3.2
+      <path id="skater-mask" fill="#187097" d="M1252.3,702.5c0-1.8-8.2-3.1-18.2-3.1c-10.1,0-18.2,1.5-18.2,3.2l-0.1,69.7c0,1.8,8.2,3.2,18.2,3.2s18.2-1.4,18.2-3.2
   C1252.2,772.1,1252.3,702.5,1252.3,702.5z"/>
-         
     </clipPath>
     <pattern id="texture90" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
       <image xlink:href="sites/all/themes/bc_pixels/images/header-textures/texture90.png" width="100" height="100" preserveAspectRatio="none"/>
@@ -46,7 +45,6 @@
       <polygon points="1821,508 1687.32,508 1810.33,457.07 1809.2,454.35 1688.38,504.39 1780.85,411.93 1778.76,409.84 1684.62,503.99 1735.64,380.8 1732.93,379.67 1682,502.68 1682,369 1679,369 1679,502.48 1627.98,379.3 1625.26,380.43 1676.21,503.43 1581.93,409.15 1579.85,411.24 1673.99,505.38 1550.8,454.36 1549.67,457.07 1672.68,508 1539,508 1539,511 1672.48,511 1549.3,562.02 1550.43,564.74 1675.81,512.8 1579.85,608.76 1581.93,610.85 1676.22,516.57 1625.26,639.57 1627.98,640.7 1679,517.52 1679,651 1682,651 1682,517.32 1732.93,640.33 1735.65,639.2 1684.62,516.01 1778.77,610.15 1780.85,608.07 1686.57,513.78 1809.57,564.74 1810.7,562.02 1687.52,511 1821,511      "/>
     </symbol>
 
-
   </defs>
 
 <g class="scene" transform="translate(0 17)">
@@ -55,33 +53,33 @@
   <g class="air-baloon">
     <g class="mirror">
     <g class="deer-1">
-    <g id="legs">
-      <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
+    <g class="omfg-legs">
+      <path class="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5;
              M847.6,211.4c0.3,2.5-1.5,6-1.5,9.8;
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"/>
       </path>
-      <path id="bb-leg" fill="#none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10"> 
+      <path class="bb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"> 
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9;
             M863.1,211.9c2.8,2.8,2.8,9.3,2.8,9.3;
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"/>
       </path>
-      <path id="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M861.1,210.2c0,0,2.7,4.7,2.7,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;
             M861.1,210.2c0,0-1.6,5.2-1.6,11;
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;"/>
       </path>
-      <path id="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.5,210.2c0,0-1,4.7-1,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M847.5,210.2c0,0-1,4.7-1,10.7;
             M847.5,210.2c0,0,3.2,5,3.2,11;
             M847.5,210.2c0,0-1,4.7-1,10.7;"/>
       </path>
     </g>
-    <g id="torso">
+    <g class="torso">
       <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M863.1,207h-11.3c-2.7,0-4.3,1.4-4.3,4
         c0,0.2,0,0.3,0,0.5"/>
         <path fill="#7E81A1" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.9,208.5
@@ -96,33 +94,33 @@
   </g>
 
       <g class="deer-2" transform="translate(30)">
-    <g id="legs">
-      <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
+    <g class="omfg-legs">
+      <path class="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5;
              M847.6,211.4c0.3,2.5-1.5,6-1.5,9.8;
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"/>
       </path>
-      <path id="bb-leg" fill="#none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10"> 
+      <path class="bb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"> 
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9;
             M863.1,211.9c2.8,2.8,2.8,9.3,2.8,9.3;
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"/>
       </path>
-      <path id="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M861.1,210.2c0,0,2.7,4.7,2.7,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;
             M861.1,210.2c0,0-1.6,5.2-1.6,11;
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;"/>
       </path>
-      <path id="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.5,210.2c0,0-1,4.7-1,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M847.5,210.2c0,0-1,4.7-1,10.7;
             M847.5,210.2c0,0,3.2,5,3.2,11;
             M847.5,210.2c0,0-1,4.7-1,10.7;"/>
       </path>
     </g>
-    <g id="torso">
+    <g class="torso">
       <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M863.1,207h-11.3c-2.7,0-4.3,1.4-4.3,4
         c0,0.2,0,0.3,0,0.5"/>
         <path fill="#7E81A1" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.9,208.5
@@ -137,33 +135,33 @@
   </g>
 
   <g class="deer-3" transform="translate(60)">
-    <g id="legs">
-      <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
+    <g class="omfg-legs">
+      <path class="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5;
              M847.6,211.4c0.3,2.5-1.5,6-1.5,9.8;
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"/>
       </path>
-      <path id="bb-leg" fill="#none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10"> 
+      <path class="bb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"> 
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9;
             M863.1,211.9c2.8,2.8,2.8,9.3,2.8,9.3;
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"/>
       </path>
-      <path id="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M861.1,210.2c0,0,2.7,4.7,2.7,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;
             M861.1,210.2c0,0-1.6,5.2-1.6,11;
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;"/>
       </path>
-      <path id="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.5,210.2c0,0-1,4.7-1,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M847.5,210.2c0,0-1,4.7-1,10.7;
             M847.5,210.2c0,0,3.2,5,3.2,11;
             M847.5,210.2c0,0-1,4.7-1,10.7;"/>
       </path>
     </g>
-    <g id="torso">
+    <g class="torso">
       <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M863.1,207h-11.3c-2.7,0-4.3,1.4-4.3,4
         c0,0.2,0,0.3,0,0.5"/>
         <path fill="#7E81A1" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.9,208.5
@@ -177,27 +175,27 @@
     </g>
   </g>
 
-        <g class="deer-4" transform="translate(90)">
-    <g id="legs">
-      <path id="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10"> 
+    <g class="deer-4" transform="translate(90)">
+    <g class="omfg-legs">
+      <path class="bf-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"> 
         <animate  attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced"  values="
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5;
              M847.6,211.4c0.3,2.5-1.5,6-1.5,9.8;
              M847.6,211.4c0.3,2.5,2.8,5.6,2.8,9.5"/>
       </path>
-      <path id="bb-leg" fill="#none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10"> 
+      <path class="bb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"> 
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9;
             M863.1,211.9c2.8,2.8,2.8,9.3,2.8,9.3;
             M863.1,211.9c-3.8,1.2-3.8,9-3.8,9"/>
       </path>
-      <path id="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="fb-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M861.1,210.2c0,0,2.7,4.7,2.7,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;
             M861.1,210.2c0,0-1.6,5.2-1.6,11;
             M861.1,210.2c0,0,2.7,4.7,2.7,10.7;"/>
       </path>
-      <path id="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" >
+      <path class="ff-leg" fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M847.5,210.2c0,0-1,4.7-1,10.7">
         <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" values="
             M847.5,210.2c0,0-1,4.7-1,10.7;
             M847.5,210.2c0,0,3.2,5,3.2,11;
@@ -205,38 +203,36 @@
       </path>
     </g>
 
-    <g id="torso">
+    <g class="torso">
       <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-miterlimit="10" d="M863.1,207h-11.3c-2.7,0-4.3,1.4-4.3,4
         c0,0.2,0,0.3,0,0.5"/>
-        <path fill="#7E81A1" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.9,208.5
-          l-2.6-1.6v-7.7c0-0.9,0.7-1.6,1.6-1.6l3.6,0.6c0,0-0.7-0.2-2,0.7c-1.3,1-2.1,3.2-0.7,5.1c0,0,3.9,5-1,7.9"/>
-        <path fill="#7E81A1" d="M848,213.2h15.4c0,0,2.8-2.5,2.5-4.3c-0.3-1.8-2.1-1.9-2.1-1.9h-12.6c-1.2,0.1-2.8,0.7-3.4,2.5
-          C847.1,211.3,848,213.2,848,213.2z"/>
-        <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M862.3,197.3c-1.7,1.7-4.4,1.7-6,0
-          s-1.7-4.4,0-6"/>
-        <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M862.2,197.4c-1.1,1.1-2.8,1.1-3.9,0
-          s-1.1-2.8,0-3.9"/>
-          <circle fill="#E24B70" cx="867" cy="197.3" r="1.5"/>
+      <path fill="#7E81A1" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M863.9,208.5
+        l-2.6-1.6v-7.7c0-0.9,0.7-1.6,1.6-1.6l3.6,0.6c0,0-0.7-0.2-2,0.7c-1.3,1-2.1,3.2-0.7,5.1c0,0,3.9,5-1,7.9"/>
+      <path fill="#7E81A1" d="M848,213.2h15.4c0,0,2.8-2.5,2.5-4.3c-0.3-1.8-2.1-1.9-2.1-1.9h-12.6c-1.2,0.1-2.8,0.7-3.4,2.5
+        C847.1,211.3,848,213.2,848,213.2z"/>
+      <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M862.3,197.3c-1.7,1.7-4.4,1.7-6,0
+        s-1.7-4.4,0-6"/>
+      <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M862.2,197.4c-1.1,1.1-2.8,1.1-3.9,0
+        s-1.1-2.8,0-3.9"/>
+      <circle fill="#E24B70" cx="867" cy="197.3" r="2.5"/>
     </g>
   </g>
-
-
-<g class="santas">
-  <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M889.3,229.6
-    c0.7,0.8,1.2,1.8,1.2,3l0,0c0,2.4-2,4.4-4.4,4.4h-35.9c-2.4,0-4.4-2-4.4-4.4l0,0"/>
-  <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="850.2" y1="237" x2="855.8" y2="231.3"/>
-  <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="885.6" y1="237" x2="879.9" y2="231.3"/>
-  <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="867" y1="229.9" x2="867" y2="237"/>
-  <path fill="#7E81A1" d="M882.5,227.1H867v-0.8c0-3.8-3.1-6.8-6.8-6.8h-6.3c-1.4,0-2.5,1.1-2.5,2.5c0,0-0.3,7.6,0,9.4
-    c0.3,1.8,2.1,1.9,2.1,1.9h25.7c1.2-0.1,2.8-0.7,3.4-2.5C883.1,229,882.5,227.1,882.5,227.1z"/>
-  <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M881.3,231.9c0,0,3.1-2.5,0.5-6.3
-    c-2.5-3.7-0.4-5.5-0.4-5.5"/>
-  <rect x="853.8" y="217.1" fill="#E24B70" width="7.5" height="9.9"/>
-  <rect x="857.6" y="221.7" fill="#EEC38D" width="5.9" height="5.4"/>
-  <rect x="860.5" y="221.7" fill="#F3B2C5" width="4.6" height="5.4"/>
-  <rect x="859.1" y="218.6" fill="#F5D9B6" width="3.4" height="3.1"/>
-</g></g>
-
+  <g class="santas">
+    <path fill="none" stroke="#7E81A1" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M889.3,229.6
+      c0.7,0.8,1.2,1.8,1.2,3l0,0c0,2.4-2,4.4-4.4,4.4h-35.9c-2.4,0-4.4-2-4.4-4.4l0,0"/>
+    <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="850.2" y1="237" x2="855.8" y2="231.3"/>
+    <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="885.6" y1="237" x2="879.9" y2="231.3"/>
+    <line fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" x1="867" y1="229.9" x2="867" y2="237"/>
+    <path fill="#7E81A1" d="M882.5,227.1H867v-0.8c0-3.8-3.1-6.8-6.8-6.8h-6.3c-1.4,0-2.5,1.1-2.5,2.5c0,0-0.3,7.6,0,9.4
+      c0.3,1.8,2.1,1.9,2.1,1.9h25.7c1.2-0.1,2.8-0.7,3.4-2.5C883.1,229,882.5,227.1,882.5,227.1z"/>
+    <path fill="none" stroke="#7E81A1" stroke-width="1.5" stroke-miterlimit="10" d="M881.3,231.9c0,0,3.1-2.5,0.5-6.3
+      c-2.5-3.7-0.4-5.5-0.4-5.5"/>
+    <rect x="853.8" y="217.1" fill="#E24B70" width="7.5" height="9.9"/>
+    <rect x="857.6" y="221.7" fill="#EEC38D" width="5.9" height="5.4"/>
+    <rect x="860.5" y="221.7" fill="#F3B2C5" width="4.6" height="5.4"/>
+    <rect x="859.1" y="218.6" fill="#F5D9B6" width="3.4" height="3.1"/>
+  </g>
+</g>
 
      
  </g>
@@ -1839,16 +1835,15 @@
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="1468.5" y1="695" x2="1468.5" y2="726"/>
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="1468.92" y1="705.12" x2="1475.87" y2="699.2"/>
   </g>
-  <g class="tree-3">
-     
+  <g class="tree-3">     
     <path fill="#fff" d="M546.15,705.36c-6.75,6.75-17.7,6.75-24.45,0l-1.29-1.29c-6.75-6.75-6.75-17.7,0-24.45l1.29-1.29         c6.75-6.75,17.7-6.75,24.45,0l1.29,1.29c6.75,6.75,6.75,17.7,0,24.45L546.15,705.36z"/> 
     <path class="tree" fill="#fff" d="M546.15,705.36c-6.75,6.75-17.7,6.75-24.45,0l-1.29-1.29c-6.75-6.75-6.75-17.7,0-24.45l1.29-1.29         c6.75-6.75,17.7-6.75,24.45,0l1.29,1.29c6.75,6.75,6.75,17.7,0,24.45L546.15,705.36z"/>
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="533.5" y1="697" x2="533.5" y2="729"/>
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="533.92" y1="705.44" x2="540.87" y2="699.34"/>
   </g>
-    <path id="bush-3" fill="#fff" d="M1101.28,713.33c-0.71,0-1.39,0.1-2.04,0.28c-1.32-5.23-6.04-9.1-11.68-9.1     c-6.66,0-12.06,5.4-12.06,12.06c0,6.66,5.4,12.06,12.06,12.06c0.15,0,0.29-0.02,0.44-0.02l13,0.16c0.09,0,0.18,0.01,0.28,0.01     c4.27,0,7.72-3.46,7.72-7.72C1109,716.79,1105.54,713.33,1101.28,713.33z"/>
-    <path id="bush-2_1_" fill="#fff" d="M507.28,713.33c-0.71,0-1.39,0.1-2.04,0.28c-1.32-5.23-6.04-9.1-11.68-9.1     c-6.66,0-12.06,5.4-12.06,12.06c0,6.66,5.4,12.06,12.06,12.06c0.15,0,0.29-0.02,0.44-0.02l13,0.16c0.09,0,0.18,0.01,0.28,0.01     c4.27,0,7.72-3.46,7.72-7.72C515,716.79,511.54,713.33,507.28,713.33z"/>
-    <path id="bush-1_1_" fill="#fff" d="M1334.82,717.8c-0.51,0-1.01,0.06-1.49,0.17c0.01-0.26,0.04-0.51,0.04-0.78     c0-7.28-5.9-13.18-13.18-13.18c-5.87,0-10.84,3.84-12.55,9.14c-0.92-0.32-1.91-0.5-2.94-0.5c-4.95,0-8.97,4.02-8.97,8.97     c0,4.95,4.02,9.62,8.97,9.62c0.1,0,29.41,0.08,30.12,0.08c3.73,0,6.76-3.03,6.76-6.76C1341.58,720.83,1338.55,717.8,1334.82,717.8z     "/>
+  <path id="bush-3" fill="#fff" d="M1101.28,713.33c-0.71,0-1.39,0.1-2.04,0.28c-1.32-5.23-6.04-9.1-11.68-9.1     c-6.66,0-12.06,5.4-12.06,12.06c0,6.66,5.4,12.06,12.06,12.06c0.15,0,0.29-0.02,0.44-0.02l13,0.16c0.09,0,0.18,0.01,0.28,0.01     c4.27,0,7.72-3.46,7.72-7.72C1109,716.79,1105.54,713.33,1101.28,713.33z"/>
+  <path id="bush-2_1_" fill="#fff" d="M507.28,713.33c-0.71,0-1.39,0.1-2.04,0.28c-1.32-5.23-6.04-9.1-11.68-9.1     c-6.66,0-12.06,5.4-12.06,12.06c0,6.66,5.4,12.06,12.06,12.06c0.15,0,0.29-0.02,0.44-0.02l13,0.16c0.09,0,0.18,0.01,0.28,0.01     c4.27,0,7.72-3.46,7.72-7.72C515,716.79,511.54,713.33,507.28,713.33z"/>
+  <path id="bush-1_1_" fill="#fff" d="M1334.82,717.8c-0.51,0-1.01,0.06-1.49,0.17c0.01-0.26,0.04-0.51,0.04-0.78     c0-7.28-5.9-13.18-13.18-13.18c-5.87,0-10.84,3.84-12.55,9.14c-0.92-0.32-1.91-0.5-2.94-0.5c-4.95,0-8.97,4.02-8.97,8.97     c0,4.95,4.02,9.62,8.97,9.62c0.1,0,29.41,0.08,30.12,0.08c3.73,0,6.76-3.03,6.76-6.76C1341.58,720.83,1338.55,717.8,1334.82,717.8z     "/>
   <g class="tree-2_1_"> 
     <path fill="#fff" d="M1549.14,664.91c-0.11-0.11-0.23-0.2-0.34-0.31l0.07-0.07l-12.94-12.95c-3.35-3.35-8.79-3.35-12.15,0           l-12.95,12.95l0.09,0.09c-0.11,0.1-0.22,0.19-0.32,0.29c-10.64,10.64-10.64,27.9,0,38.54c5.29,5.29,12.21,7.95,19.15,7.98           c7.02,0.03,14.04-2.63,19.39-7.98C1559.78,692.81,1559.78,675.56,1549.14,664.91z"/>
     <path class="tree" fill="#fff" d="M1549.14,664.91c-0.11-0.11-0.23-0.2-0.34-0.31l0.07-0.07l-12.94-12.95c-3.35-3.35-8.79-3.35-12.15,0           l-12.95,12.95l0.09,0.09c-0.11,0.1-0.22,0.19-0.32,0.29c-10.64,10.64-10.64,27.9,0,38.54c5.29,5.29,12.21,7.95,19.15,7.98           c7.02,0.03,14.04-2.63,19.39-7.98C1559.78,692.81,1559.78,675.56,1549.14,664.91z"/>
@@ -1869,70 +1864,56 @@
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="1928.5" y1="683" x2="1928.5" y2="726"/>
     <line fill="none" stroke="#677889" stroke-width="3" stroke-miterlimit="10" x1="1928.75" y1="696.88" x2="1938.44" y2="688.63"/>
   </g> 
-    <rect class="reflection-pink" x="1813" y="734" fill="#eee" width="71.1" height="70.1"/>
-    <rect class="reflection-yellow" x="2380" y="734" fill="#eee" width="71.1" height="70.1"/>
-    <rect class="reflection-grey" x="1352" y="734" fill="#eee" width="71.1" height="70.1"/>
-    <rect class="reflection-yellow" x="952" y="734" fill="#eee" width="71.1" height="70.1"/>
-    <rect class="boat-reflection2" x="708" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <rect class="reflection-pink" x="1813" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <rect class="reflection-yellow" x="2380" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <rect class="reflection-grey" x="1352" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <rect class="reflection-yellow" x="952" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <rect class="boat-reflection2" x="708" y="734" fill="#eee" width="71.1" height="70.1"/>
+  <g class="omfg-skater"> 
+    <g class="hole">
+     <ellipse fill="#187097" cx="1236" cy="772" rx="15" ry="3"/>
+    </g>  
+    <g class="drop">
+      <g class="flipped">
+        <path fill="none" stroke="#7E81A1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4">
+          <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
+          values="M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;
+          M1246.7,762.1c-12.1-3.1-11.4-14.6-11.4-14.6;
+          M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4"/>
+        </path>
+        <path fill="none" stroke="#7E81A1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10" d="M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4">
+          <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
+          values="
+          M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;
+          M1235.3,766.9c-1.1-6.7,0-19.4,0-19.4;
+          M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;"/>
+        </path>        
+         <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,770.1c0,0-4,1.4-8.9,0">
+          <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
+          values="M1237.9,770.1c0,0-4,1.4-8.9,0;
+          M1250.4,761.8c-1.5,4.2-4.9,7.4-4.9,7.4;
+          M1237.9,770.1c0,0-4,1.4-8.9,0
+          "/>
+        </path>
+        <path fill="none" stroke="#E24B70" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,767.7c0,0-2.6,0.4-6.6,0">
+          <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
+            values="M1237.9,767.7c0,0-2.6,0.4-6.6,0;
+            M1248.4,760.5c-0.5,2-3.7,5.5-3.7,5.5;
+            M1237.9,767.7c0,0-2.6,0.4-6.6,0"/>
+        </path>
 
-
-
-
-
-
-<g class="omfg-skater"> 
-  <g class="hole">
-   <ellipse fill="#187097" cx="1236" cy="772" rx="15" ry="3"/>
-  </g>  
-  <g class="drop">
-  <g class="flipped">
-  <path fill="none" stroke="#7E81A1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10">
-    <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
-    values="M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;
-    M1246.7,762.1c-12.1-3.1-11.4-14.6-11.4-14.6;
-    M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4"/>
-  </path>
-  <path fill="none" stroke="#7E81A1" stroke-width="4" stroke-linejoin="round" stroke-miterlimit="10">
-    <animate attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
-    values="
-    M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;
-    M1235.3,766.9c-1.1-6.7,0-19.4,0-19.4;
-    M1235.3,766.9c-3.5-7.1,0-19.4,0-19.4;"/>
-  </path>
-  
-   <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" ><animate 
-    attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
-    values="M1237.9,770.1c0,0-4,1.4-8.9,0;
-    M1250.4,761.8c-1.5,4.2-4.9,7.4-4.9,7.4;
-    M1237.9,770.1c0,0-4,1.4-8.9,0
-    "/>
-  </path>
-  <path fill="none" stroke="#E24B70" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10">
-    <animate 
-      attributeName="d" dur="800ms" repeatCount="indefinite" keyTimes="0;.5;1;" calcMode="paced" 
-      values="M1237.9,767.7c0,0-2.6,0.4-6.6,0;
-      M1248.4,760.5c-0.5,2-3.7,5.5-3.7,5.5;
-      M1237.9,767.7c0,0-2.6,0.4-6.6,0"/>
-  </path>
-
-  
-  <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,770.1c0,0-4,1.4-8.9,0"/>
-  <path fill="none" stroke="#E24B70" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,767.7c0,0-2.6,0.4-6.6,0"/>
-  <path fill="#E24B70" d="M1239,749.2l-7.3,1.3l-3.4-18.9c-0.2-0.9,0.4-1.7,1.3-1.8l4.2-0.8c0.9-0.2,1.7,0.4,1.8,1.3L1239,749.2z"/>
-  <path fill="#F5D9B6" d="M1230,720.2L1230,720.2c2-0.4,4,1,4.3,3l0,0c0.4,2-1,4-3,4.3l0,0c-2,0.4-4-1-4.3-3l0,0
-    C1226.6,722.5,1227.9,720.5,1230,720.2z"/>
-
-
-   
-    
-      <rect x="1229.6" y="727.7" transform="matrix(0.9842 -0.1773 0.1773 0.9842 -109.6551 229.8795)" fill="#E24B70" width="4.5" height="2"/>
-  </g>
-
-  <polygon fill="#E24B70" points="1231.9,716.4 1234.2,722.6 1227.5,721.8  "/>
-   <rect x="1176" y="660" fill="red" opacity="0" width="120" height="100" style="
-"></rect>
-  </g></g>
- 
+        <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,770.1c0,0-4,1.4-8.9,0"/>
+        <path fill="none" stroke="#E24B70" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M1237.9,767.7c0,0-2.6,0.4-6.6,0"/>
+        <path fill="#E24B70" d="M1239,749.2l-7.3,1.3l-3.4-18.9c-0.2-0.9,0.4-1.7,1.3-1.8l4.2-0.8c0.9-0.2,1.7,0.4,1.8,1.3L1239,749.2z"/>
+        <path fill="#F5D9B6" d="M1230,720.2L1230,720.2c2-0.4,4,1,4.3,3l0,0c0.4,2-1,4-3,4.3l0,0c-2,0.4-4-1-4.3-3l0,0
+          C1226.6,722.5,1227.9,720.5,1230,720.2z"/>
+               
+        <rect x="1229.6" y="727.7" transform="matrix(0.9842 -0.1773 0.1773 0.9842 -109.6551 229.8795)" fill="#E24B70" width="4.5" height="2"/>
+      </g>
+      <polygon fill="#E24B70" points="1231.9,716.4 1234.2,722.6 1227.5,721.8  "/>
+      <rect x="1176" y="660" fill="red" opacity="0" width="120" height="100"></rect>
+    </g>
+  </g> 
 </g>
 </g>
 </g></g>
