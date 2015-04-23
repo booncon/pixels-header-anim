@@ -147,32 +147,33 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: 2;
 }
 
-/* line 113, _header.scss */
+/* line 114, _header.scss */
 .header_site-slogan {
   z-index: 10;
   cursor: pointer;
 }
-/* line 116, _header.scss */
+/* line 117, _header.scss */
 .header_site-slogan ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 120, _header.scss */
+/* line 121, _header.scss */
 .header_site-slogan ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-/* line 128, _header.scss */
+/* line 129, _header.scss */
 img.desaturate {
   -webkit-filter: grayscale(100%);
 }
 
-/* line 131, _header.scss */
+/* line 132, _header.scss */
 .header-display-screen {
   cursor: pointer;
 }
@@ -253,7 +254,7 @@ img.desaturate {
     transform: scale(1, 1) translate(0, 0);
   }
 }
-/* line 155, _header.scss */
+/* line 156, _header.scss */
 g.flipped {
   -moz-animation: flipped 15s ease-in-out infinite;
   -webkit-animation: flipped 15s ease-in-out infinite;
@@ -294,7 +295,7 @@ g.flipped {
     transform: rotate(-360deg);
   }
 }
-/* line 168, _header.scss */
+/* line 169, _header.scss */
 .cabin {
   -moz-transform-origin: 50% 50% 0 50%;
   -ms-transform-origin: 50% 50% 0 50%;
@@ -339,7 +340,7 @@ g.flipped {
     transform: rotate(360deg);
   }
 }
-/* line 181, _header.scss */
+/* line 182, _header.scss */
 .wheel-r {
   -moz-transform-origin: 50% 50% 0 50%;
   -ms-transform-origin: 50% 50% 0 50%;
@@ -426,7 +427,7 @@ g.flipped {
     transform: translateY(0);
   }
 }
-/* line 204, _header.scss */
+/* line 205, _header.scss */
 .tower-viewpoint {
   -moz-animation: tower-movement 40s linear infinite;
   -webkit-animation: tower-movement 40s linear infinite;
@@ -481,7 +482,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 220, _header.scss */
+/* line 221, _header.scss */
 .boat {
   -moz-animation: 0, 2s, boat, ease-in-out, infinite;
   -webkit-animation: 0, 2s, boat, ease-in-out, infinite;
@@ -536,7 +537,7 @@ g.flipped {
     transform: translate(100vw, 10em);
   }
 }
-/* line 239, _header.scss */
+/* line 240, _header.scss */
 .baloon-flight {
   -moz-animation: baloon-flight 170s ease-in-out infinite;
   -webkit-animation: baloon-flight 170s ease-in-out infinite;
@@ -591,7 +592,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 256, _header.scss */
+/* line 257, _header.scss */
 .air-baloon {
   -moz-animation: air-baloon 8s ease-in-out infinite;
   -webkit-animation: air-baloon 8s ease-in-out infinite;
@@ -622,7 +623,7 @@ g.flipped {
     stroke-dashoffset: 1000;
   }
 }
-/* line 268, _header.scss */
+/* line 269, _header.scss */
 .rollercoaster-line {
   stroke-dasharray: 20, 480;
   -moz-animation: dash 6s ease-in-out infinite;
@@ -664,7 +665,7 @@ g.flipped {
     transform: translate(-30em, 0);
   }
 }
-/* line 283, _header.scss */
+/* line 284, _header.scss */
 g.move-boat {
   -moz-transition: all 15s ease-in-out;
   -o-transition: all 15s ease-in-out;
@@ -672,7 +673,7 @@ g.move-boat {
   transition: all 15s ease-in-out;
 }
 
-/* line 288, _header.scss */
+/* line 289, _header.scss */
 g.right:hover ~ g.move-boat {
   -moz-transform: translate(50em, 0);
   -ms-transform: translate(50em, 0);
@@ -680,7 +681,7 @@ g.right:hover ~ g.move-boat {
   transform: translate(50em, 0);
 }
 
-/* line 292, _header.scss */
+/* line 293, _header.scss */
 g.left:hover ~ g.move-boat {
   -moz-transform: translate(-50em, 0);
   -ms-transform: translate(-50em, 0);
