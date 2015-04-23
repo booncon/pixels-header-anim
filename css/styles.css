@@ -301,8 +301,8 @@ g.flipped {
     transform: rotate(0deg);
   }
   50% {
-    -moz-transform: rotate(0.1deg);
-    transform: rotate(0.1deg);
+    -moz-transform: rotate(0.2deg);
+    transform: rotate(0.2deg);
   }
   100% {
     -moz-transform: rotate(0deg);
@@ -315,8 +315,8 @@ g.flipped {
     transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(0.1deg);
-    transform: rotate(0.1deg);
+    -webkit-transform: rotate(0.2deg);
+    transform: rotate(0.2deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -331,10 +331,10 @@ g.flipped {
     transform: rotate(0deg);
   }
   50% {
-    -moz-transform: rotate(0.1deg);
-    -ms-transform: rotate(0.1deg);
-    -webkit-transform: rotate(0.1deg);
-    transform: rotate(0.1deg);
+    -moz-transform: rotate(0.2deg);
+    -ms-transform: rotate(0.2deg);
+    -webkit-transform: rotate(0.2deg);
+    transform: rotate(0.2deg);
   }
   100% {
     -moz-transform: rotate(0deg);
@@ -343,7 +343,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 119, _header.scss */
+/* line 120, _header.scss */
 .boat {
   -moz-animation: 0, 2s, boat, ease-in-out, infinite;
   -webkit-animation: 0, 2s, boat, ease-in-out, infinite;
@@ -352,57 +352,57 @@ g.flipped {
 
 @-moz-keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-200em, 10em);
-    transform: translate(-200em, 10em);
+    -moz-transform: translate(-150em, 12em);
+    transform: translate(-150em, 12em);
   }
   50% {
-    -moz-transform: translate(20em, 6em);
-    transform: translate(20em, 6em);
+    -moz-transform: translate(20em, 8em);
+    transform: translate(20em, 8em);
   }
   100% {
-    -moz-transform: translate(200em, 10em);
-    transform: translate(200em, 10em);
+    -moz-transform: translate(100em, 10em);
+    transform: translate(100em, 10em);
   }
 }
 @-webkit-keyframes baloon-flight {
   0% {
-    -webkit-transform: translate(-200em, 10em);
-    transform: translate(-200em, 10em);
+    -webkit-transform: translate(-150em, 12em);
+    transform: translate(-150em, 12em);
   }
   50% {
-    -webkit-transform: translate(20em, 6em);
-    transform: translate(20em, 6em);
+    -webkit-transform: translate(20em, 8em);
+    transform: translate(20em, 8em);
   }
   100% {
-    -webkit-transform: translate(200em, 10em);
-    transform: translate(200em, 10em);
+    -webkit-transform: translate(100em, 10em);
+    transform: translate(100em, 10em);
   }
 }
 @keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-200em, 10em);
-    -ms-transform: translate(-200em, 10em);
-    -webkit-transform: translate(-200em, 10em);
-    transform: translate(-200em, 10em);
+    -moz-transform: translate(-150em, 12em);
+    -ms-transform: translate(-150em, 12em);
+    -webkit-transform: translate(-150em, 12em);
+    transform: translate(-150em, 12em);
   }
   50% {
-    -moz-transform: translate(20em, 6em);
-    -ms-transform: translate(20em, 6em);
-    -webkit-transform: translate(20em, 6em);
-    transform: translate(20em, 6em);
+    -moz-transform: translate(20em, 8em);
+    -ms-transform: translate(20em, 8em);
+    -webkit-transform: translate(20em, 8em);
+    transform: translate(20em, 8em);
   }
   100% {
-    -moz-transform: translate(200em, 10em);
-    -ms-transform: translate(200em, 10em);
-    -webkit-transform: translate(200em, 10em);
-    transform: translate(200em, 10em);
+    -moz-transform: translate(100em, 10em);
+    -ms-transform: translate(100em, 10em);
+    -webkit-transform: translate(100em, 10em);
+    transform: translate(100em, 10em);
   }
 }
-/* line 135, _header.scss */
+/* line 139, _header.scss */
 .baloon-flight {
-  -moz-animation: baloon-flight 40s ease-in-out infinite;
-  -webkit-animation: baloon-flight 40s ease-in-out infinite;
-  animation: baloon-flight 40s ease-in-out infinite;
+  -moz-animation: baloon-flight 170s ease-in-out infinite;
+  -webkit-animation: baloon-flight 170s ease-in-out infinite;
+  animation: baloon-flight 170s ease-in-out infinite;
 }
 
 @-moz-keyframes air-baloon {
@@ -453,11 +453,11 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 152, _header.scss */
+/* line 156, _header.scss */
 .air-baloon {
-  -moz-animation: air-baloon 3s ease-in-out infinite;
-  -webkit-animation: air-baloon 3s ease-in-out infinite;
-  animation: air-baloon 3s ease-in-out infinite;
+  -moz-animation: air-baloon 8s ease-in-out infinite;
+  -webkit-animation: air-baloon 8s ease-in-out infinite;
+  animation: air-baloon 8s ease-in-out infinite;
 }
 
 @-moz-keyframes dash {
@@ -484,7 +484,7 @@ g.flipped {
     stroke-dashoffset: 1000;
   }
 }
-/* line 164, _header.scss */
+/* line 168, _header.scss */
 .rollercoaster-line {
   stroke-dasharray: 20, 480;
   -moz-animation: dash 6s ease-in-out infinite;
@@ -526,347 +526,28 @@ g.flipped {
     transform: translate(-30em, 0);
   }
 }
-/* line 178, _header.scss */
-.omfg-skater {
-  cursor: pointer;
-  -moz-animation: skater 15s ease-in-out forwards infinite;
-  -webkit-animation: skater 15s ease-in-out forwards infinite;
-  animation: skater 15s ease-in-out forwards infinite;
+/* line 186, _header.scss */
+g.move-boat {
+  -moz-transition: all 15s ease-in-out;
+  -o-transition: all 15s ease-in-out;
+  -webkit-transition: all 15s ease-in-out;
+  transition: all 15s ease-in-out;
 }
 
-@-moz-keyframes santas {
-  0% {
-    -moz-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-  50% {
-    -moz-transform: translate(-60px, -10px);
-    transform: translate(-60px, -10px);
-  }
-  100% {
-    -moz-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-}
-@-webkit-keyframes santas {
-  0% {
-    -webkit-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-  50% {
-    -webkit-transform: translate(-60px, -10px);
-    transform: translate(-60px, -10px);
-  }
-  100% {
-    -webkit-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-}
-@keyframes santas {
-  0% {
-    -moz-transform: translate(-60px, -12px);
-    -ms-transform: translate(-60px, -12px);
-    -webkit-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-  50% {
-    -moz-transform: translate(-60px, -10px);
-    -ms-transform: translate(-60px, -10px);
-    -webkit-transform: translate(-60px, -10px);
-    transform: translate(-60px, -10px);
-  }
-  100% {
-    -moz-transform: translate(-60px, -12px);
-    -ms-transform: translate(-60px, -12px);
-    -webkit-transform: translate(-60px, -12px);
-    transform: translate(-60px, -12px);
-  }
-}
-@-moz-keyframes deerone {
-  0% {
-    -moz-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-  50% {
-    -moz-transform: translate(0px, 5px);
-    transform: translate(0px, 5px);
-  }
-  100% {
-    -moz-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-}
-@-webkit-keyframes deerone {
-  0% {
-    -webkit-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-  50% {
-    -webkit-transform: translate(0px, 5px);
-    transform: translate(0px, 5px);
-  }
-  100% {
-    -webkit-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-}
-@keyframes deerone {
-  0% {
-    -moz-transform: translate(0px, 8px);
-    -ms-transform: translate(0px, 8px);
-    -webkit-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-  50% {
-    -moz-transform: translate(0px, 5px);
-    -ms-transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
-    transform: translate(0px, 5px);
-  }
-  100% {
-    -moz-transform: translate(0px, 8px);
-    -ms-transform: translate(0px, 8px);
-    -webkit-transform: translate(0px, 8px);
-    transform: translate(0px, 8px);
-  }
-}
-@-moz-keyframes deertwo {
-  0% {
-    -moz-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-  50% {
-    -moz-transform: translate(30px, 0px);
-    transform: translate(30px, 0px);
-  }
-  100% {
-    -moz-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-}
-@-webkit-keyframes deertwo {
-  0% {
-    -webkit-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-  50% {
-    -webkit-transform: translate(30px, 0px);
-    transform: translate(30px, 0px);
-  }
-  100% {
-    -webkit-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-}
-@keyframes deertwo {
-  0% {
-    -moz-transform: translate(30px, 10px);
-    -ms-transform: translate(30px, 10px);
-    -webkit-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-  50% {
-    -moz-transform: translate(30px, 0px);
-    -ms-transform: translate(30px, 0px);
-    -webkit-transform: translate(30px, 0px);
-    transform: translate(30px, 0px);
-  }
-  100% {
-    -moz-transform: translate(30px, 10px);
-    -ms-transform: translate(30px, 10px);
-    -webkit-transform: translate(30px, 10px);
-    transform: translate(30px, 10px);
-  }
-}
-@-moz-keyframes deerthree {
-  0% {
-    -moz-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-  50% {
-    -moz-transform: translate(60px, -5px);
-    transform: translate(60px, -5px);
-  }
-  100% {
-    -moz-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-}
-@-webkit-keyframes deerthree {
-  0% {
-    -webkit-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-  50% {
-    -webkit-transform: translate(60px, -5px);
-    transform: translate(60px, -5px);
-  }
-  100% {
-    -webkit-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-}
-@keyframes deerthree {
-  0% {
-    -moz-transform: translate(60px, 12px);
-    -ms-transform: translate(60px, 12px);
-    -webkit-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-  50% {
-    -moz-transform: translate(60px, -5px);
-    -ms-transform: translate(60px, -5px);
-    -webkit-transform: translate(60px, -5px);
-    transform: translate(60px, -5px);
-  }
-  100% {
-    -moz-transform: translate(60px, 12px);
-    -ms-transform: translate(60px, 12px);
-    -webkit-transform: translate(60px, 12px);
-    transform: translate(60px, 12px);
-  }
-}
-@-moz-keyframes deerfour {
-  0% {
-    -moz-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-  50% {
-    -moz-transform: translate(90px, -8px);
-    transform: translate(90px, -8px);
-  }
-  100% {
-    -moz-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-}
-@-webkit-keyframes deerfour {
-  0% {
-    -webkit-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-  50% {
-    -webkit-transform: translate(90px, -8px);
-    transform: translate(90px, -8px);
-  }
-  100% {
-    -webkit-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-}
-@keyframes deerfour {
-  0% {
-    -moz-transform: translate(90px, 16px);
-    -ms-transform: translate(90px, 16px);
-    -webkit-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-  50% {
-    -moz-transform: translate(90px, -8px);
-    -ms-transform: translate(90px, -8px);
-    -webkit-transform: translate(90px, -8px);
-    transform: translate(90px, -8px);
-  }
-  100% {
-    -moz-transform: translate(90px, 16px);
-    -ms-transform: translate(90px, 16px);
-    -webkit-transform: translate(90px, 16px);
-    transform: translate(90px, 16px);
-  }
-}
-/* line 243, _header.scss */
-.deer-1 {
-  -moz-animation: deerone 5s ease-in-out forwards infinite;
-  -webkit-animation: deerone 5s ease-in-out forwards infinite;
-  animation: deerone 5s ease-in-out forwards infinite;
+/* line 191, _header.scss */
+g.right:hover ~ g.move-boat {
+  -moz-transform: translate(50em, 0);
+  -ms-transform: translate(50em, 0);
+  -webkit-transform: translate(50em, 0);
+  transform: translate(50em, 0);
 }
 
-/* line 247, _header.scss */
-.deer-2 {
-  -moz-animation: deertwo 5s ease-in-out forwards infinite;
-  -webkit-animation: deertwo 5s ease-in-out forwards infinite;
-  animation: deertwo 5s ease-in-out forwards infinite;
-}
-
-/* line 251, _header.scss */
-.deer-3 {
-  -moz-animation: deerthree 5s ease-in-out forwards infinite;
-  -webkit-animation: deerthree 5s ease-in-out forwards infinite;
-  animation: deerthree 5s ease-in-out forwards infinite;
-}
-
-/* line 255, _header.scss */
-.deer-4 {
-  -moz-animation: deerfour 5s ease-in-out forwards infinite;
-  -webkit-animation: deerfour 5s ease-in-out forwards infinite;
-  animation: deerfour 5s ease-in-out forwards infinite;
-}
-
-/* line 259, _header.scss */
-.santas {
-  -moz-animation: santas 5s ease-in-out forwards infinite;
-  -webkit-animation: santas 5s ease-in-out forwards infinite;
-  animation: santas 5s ease-in-out forwards infinite;
-}
-
-@-moz-keyframes drop {
-  0% {
-    -moz-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(0, 6em);
-    transform: translate(0, 6em);
-  }
-}
-@-webkit-keyframes drop {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 6em);
-    transform: translate(0, 6em);
-  }
-}
-@keyframes drop {
-  0% {
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(0, 6em);
-    -ms-transform: translate(0, 6em);
-    -webkit-transform: translate(0, 6em);
-    transform: translate(0, 6em);
-  }
-}
-/* line 272, _header.scss */
-.hole {
-  display: none;
-}
-
-/* line 276, _header.scss */
-g.omfg-skater-clicked {
-  clip-path: url(#clipping);
-  -webkit-animation: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 283, _header.scss */
-g.omfg-skater-clicked g.hole {
-  display: block;
-}
-
-/* line 287, _header.scss */
-g.omfg-skater-clicked g.drop {
-  -moz-animation: drop 0.25s ease-in forwards;
-  -webkit-animation: drop 0.25s ease-in forwards;
-  animation: drop 0.25s ease-in forwards;
+/* line 195, _header.scss */
+g.left:hover ~ g.move-boat {
+  -moz-transform: translate(-50em, 0);
+  -ms-transform: translate(-50em, 0);
+  -webkit-transform: translate(-50em, 0);
+  transform: translate(-50em, 0);
 }
 
 /* line 9, styles.scss */
@@ -933,7 +614,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: 0 4px url(../assets/header-spring-clouds.png) repeat-x;
+  background: 0 4px url(../assets/header-spring-clouds-.png) repeat-x;
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
   -webkit-background-size: auto 100%;
@@ -942,7 +623,7 @@ body {
 /* line 63, styles.scss */
 .region-header .block:after {
   z-index: -1;
-  background-image: url(../assets/px_header-background-winter.png);
+  background-image: url(../assets/px_header-background-summer.png);
 }
 /* line 68, styles.scss */
 .region-header .block p {
