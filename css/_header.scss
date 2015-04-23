@@ -1,3 +1,103 @@
+@include keyframes(cloud-fun) {
+  0% {
+    background-position-x: 0px;
+  } 
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+.header-wrap {
+  background-color: $px-blue-light-10;
+  padding-bottom: 1.8em;
+}
+
+.region-header {
+  position: relative;
+  .block {
+    padding: 0;    
+    > .block-container {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  background-color: #fff;
+}    
+
+.page-frontpage .region-header { /* Wrapper for any blocks placed in the header region */
+  clear: both; /* Clear the logo */
+  background-color: $px-blue-sky;
+
+  &.night-time {
+    background-color: darken($px-blue-sky, 40%);
+    .block {
+      opacity: 0.88;
+      &:before {
+        opacity: 0.4;
+      }
+    }  
+  }
+
+   &.morning-time {
+    background-color: lighten($px-blue-sky, 10%);
+    .block {
+      opacity: 0.92;
+      &:before {
+        opacity: 0.6;
+      }
+      .header_site-slogan {
+        color: $px-blue-dark;
+      }
+    }
+  }
+
+  .block {
+    &:before, &:after {
+      top: 0;
+      left: 0;
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/header-textures/header-spring-clouds-.png);
+      background-position-y: 4px;
+      @include background-size(auto 100%);
+      background-repeat: repeat-x;
+    }
+    &:before {      
+      @include animation(128s cloud-fun infinite linear);
+    }
+    &:after {
+      background-image: url(../images/header-textures/px_header-background-summer.png);
+      z-index: -1;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      height: 20em;
+      width: auto;
+      vertical-align: bottom;
+    }
+    .header_site-slogan {
+      font-family: $helia;
+      position: absolute;
+      top: 0.6em;
+      margin-left: $zen-gutter-width / 2;
+      color: $px-white;
+      z-index: 5;
+      @include mobile-landscape-and-below {
+        font-size: 1.2em;
+        top: 0;
+      }
+    }
+  }
+}
+
 .omfg-headr {
   max-height: 20em;
   position: relative;
@@ -127,13 +227,13 @@ g.flipped {
 
 @include keyframes(baloon-flight) {
   0% {
-    @include transform(translate(-150em, 12em));
+    @include transform(translate(-80vw, 12em));
   }
   50% {
-    @include transform(translate(20em, 8em));
+    @include transform(translate(0.2vw, 8em));
   }
   100% {
-    @include transform(translate(100em, 10em));
+    @include transform(translate(100vw, 10em));
   }
 }
 .baloon-flight {

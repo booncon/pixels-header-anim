@@ -1,4 +1,142 @@
-/* line 1, _header.scss */
+@-moz-keyframes cloud-fun {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+@-webkit-keyframes cloud-fun {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+@keyframes cloud-fun {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+/* line 10, _header.scss */
+.header-wrap {
+  background-color: rgba(110, 126, 140, 0.128);
+  padding-bottom: 1.8em;
+}
+
+/* line 15, _header.scss */
+.region-header {
+  position: relative;
+  background-color: #fff;
+}
+/* line 17, _header.scss */
+.region-header .block {
+  padding: 0;
+}
+/* line 19, _header.scss */
+.region-header .block > .block-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+/* line 30, _header.scss */
+.page-frontpage .region-header {
+  /* Wrapper for any blocks placed in the header region */
+  clear: both;
+  /* Clear the logo */
+  background-color: #B3DBEC;
+}
+/* line 34, _header.scss */
+.page-frontpage .region-header.night-time {
+  background-color: #2a83a9;
+}
+/* line 36, _header.scss */
+.page-frontpage .region-header.night-time .block {
+  opacity: 0.88;
+}
+/* line 38, _header.scss */
+.page-frontpage .region-header.night-time .block:before {
+  opacity: 0.4;
+}
+/* line 44, _header.scss */
+.page-frontpage .region-header.morning-time {
+  background-color: #dceef6;
+}
+/* line 46, _header.scss */
+.page-frontpage .region-header.morning-time .block {
+  opacity: 0.92;
+}
+/* line 48, _header.scss */
+.page-frontpage .region-header.morning-time .block:before {
+  opacity: 0.6;
+}
+/* line 51, _header.scss */
+.page-frontpage .region-header.morning-time .block .header_site-slogan {
+  color: #616f7b;
+}
+/* line 58, _header.scss */
+.page-frontpage .region-header .block:before, .page-frontpage .region-header .block:after {
+  top: 0;
+  left: 0;
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/header-textures/header-spring-clouds-.png);
+  background-position-y: 4px;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+/* line 70, _header.scss */
+.page-frontpage .region-header .block:before {
+  -moz-animation: 128s cloud-fun infinite linear;
+  -webkit-animation: 128s cloud-fun infinite linear;
+  animation: 128s cloud-fun infinite linear;
+}
+/* line 73, _header.scss */
+.page-frontpage .region-header .block:after {
+  background-image: url(../images/header-textures/px_header-background-summer.png);
+  z-index: -1;
+}
+/* line 77, _header.scss */
+.page-frontpage .region-header .block p {
+  margin: 0;
+  padding: 0;
+}
+/* line 81, _header.scss */
+.page-frontpage .region-header .block img {
+  height: 20em;
+  width: auto;
+  vertical-align: bottom;
+}
+/* line 86, _header.scss */
+.page-frontpage .region-header .block .header_site-slogan {
+  font-family: "Helia", Arial, Helvetica, "Nimbus Sans L", sans-serif, Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  position: absolute;
+  top: 0.6em;
+  margin-left: 10px;
+  color: #ffffff;
+  z-index: 5;
+}
+@media only screen and (max-width: 480px) {
+  /* line 86, _header.scss */
+  .page-frontpage .region-header .block .header_site-slogan {
+    font-size: 1.2em;
+    top: 0;
+  }
+}
+
+/* line 101, _header.scss */
 .omfg-headr {
   max-height: 20em;
   position: relative;
@@ -11,30 +149,30 @@
   user-select: none;
 }
 
-/* line 13, _header.scss */
+/* line 113, _header.scss */
 .header_site-slogan {
   z-index: 10;
   cursor: pointer;
 }
-/* line 16, _header.scss */
+/* line 116, _header.scss */
 .header_site-slogan ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 20, _header.scss */
+/* line 120, _header.scss */
 .header_site-slogan ul li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-/* line 28, _header.scss */
+/* line 128, _header.scss */
 img.desaturate {
   -webkit-filter: grayscale(100%);
 }
 
-/* line 31, _header.scss */
+/* line 131, _header.scss */
 .header-display-screen {
   cursor: pointer;
 }
@@ -115,7 +253,7 @@ img.desaturate {
     transform: scale(1, 1) translate(0, 0);
   }
 }
-/* line 55, _header.scss */
+/* line 155, _header.scss */
 g.flipped {
   -moz-animation: flipped 15s ease-in-out infinite;
   -webkit-animation: flipped 15s ease-in-out infinite;
@@ -156,7 +294,7 @@ g.flipped {
     transform: rotate(-360deg);
   }
 }
-/* line 68, _header.scss */
+/* line 168, _header.scss */
 .cabin {
   -moz-transform-origin: 50% 50% 0 50%;
   -ms-transform-origin: 50% 50% 0 50%;
@@ -201,7 +339,7 @@ g.flipped {
     transform: rotate(360deg);
   }
 }
-/* line 81, _header.scss */
+/* line 181, _header.scss */
 .wheel-r {
   -moz-transform-origin: 50% 50% 0 50%;
   -ms-transform-origin: 50% 50% 0 50%;
@@ -288,7 +426,7 @@ g.flipped {
     transform: translateY(0);
   }
 }
-/* line 104, _header.scss */
+/* line 204, _header.scss */
 .tower-viewpoint {
   -moz-animation: tower-movement 40s linear infinite;
   -webkit-animation: tower-movement 40s linear infinite;
@@ -343,7 +481,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 120, _header.scss */
+/* line 220, _header.scss */
 .boat {
   -moz-animation: 0, 2s, boat, ease-in-out, infinite;
   -webkit-animation: 0, 2s, boat, ease-in-out, infinite;
@@ -352,53 +490,53 @@ g.flipped {
 
 @-moz-keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-150em, 12em);
-    transform: translate(-150em, 12em);
+    -moz-transform: translate(-80vw, 12em);
+    transform: translate(-80vw, 12em);
   }
   50% {
-    -moz-transform: translate(20em, 8em);
-    transform: translate(20em, 8em);
+    -moz-transform: translate(0.2vw, 8em);
+    transform: translate(0.2vw, 8em);
   }
   100% {
-    -moz-transform: translate(100em, 10em);
-    transform: translate(100em, 10em);
+    -moz-transform: translate(100vw, 10em);
+    transform: translate(100vw, 10em);
   }
 }
 @-webkit-keyframes baloon-flight {
   0% {
-    -webkit-transform: translate(-150em, 12em);
-    transform: translate(-150em, 12em);
+    -webkit-transform: translate(-80vw, 12em);
+    transform: translate(-80vw, 12em);
   }
   50% {
-    -webkit-transform: translate(20em, 8em);
-    transform: translate(20em, 8em);
+    -webkit-transform: translate(0.2vw, 8em);
+    transform: translate(0.2vw, 8em);
   }
   100% {
-    -webkit-transform: translate(100em, 10em);
-    transform: translate(100em, 10em);
+    -webkit-transform: translate(100vw, 10em);
+    transform: translate(100vw, 10em);
   }
 }
 @keyframes baloon-flight {
   0% {
-    -moz-transform: translate(-150em, 12em);
-    -ms-transform: translate(-150em, 12em);
-    -webkit-transform: translate(-150em, 12em);
-    transform: translate(-150em, 12em);
+    -moz-transform: translate(-80vw, 12em);
+    -ms-transform: translate(-80vw, 12em);
+    -webkit-transform: translate(-80vw, 12em);
+    transform: translate(-80vw, 12em);
   }
   50% {
-    -moz-transform: translate(20em, 8em);
-    -ms-transform: translate(20em, 8em);
-    -webkit-transform: translate(20em, 8em);
-    transform: translate(20em, 8em);
+    -moz-transform: translate(0.2vw, 8em);
+    -ms-transform: translate(0.2vw, 8em);
+    -webkit-transform: translate(0.2vw, 8em);
+    transform: translate(0.2vw, 8em);
   }
   100% {
-    -moz-transform: translate(100em, 10em);
-    -ms-transform: translate(100em, 10em);
-    -webkit-transform: translate(100em, 10em);
-    transform: translate(100em, 10em);
+    -moz-transform: translate(100vw, 10em);
+    -ms-transform: translate(100vw, 10em);
+    -webkit-transform: translate(100vw, 10em);
+    transform: translate(100vw, 10em);
   }
 }
-/* line 139, _header.scss */
+/* line 239, _header.scss */
 .baloon-flight {
   -moz-animation: baloon-flight 170s ease-in-out infinite;
   -webkit-animation: baloon-flight 170s ease-in-out infinite;
@@ -453,7 +591,7 @@ g.flipped {
     transform: rotate(0deg);
   }
 }
-/* line 156, _header.scss */
+/* line 256, _header.scss */
 .air-baloon {
   -moz-animation: air-baloon 8s ease-in-out infinite;
   -webkit-animation: air-baloon 8s ease-in-out infinite;
@@ -484,7 +622,7 @@ g.flipped {
     stroke-dashoffset: 1000;
   }
 }
-/* line 168, _header.scss */
+/* line 268, _header.scss */
 .rollercoaster-line {
   stroke-dasharray: 20, 480;
   -moz-animation: dash 6s ease-in-out infinite;
@@ -526,7 +664,7 @@ g.flipped {
     transform: translate(-30em, 0);
   }
 }
-/* line 186, _header.scss */
+/* line 283, _header.scss */
 g.move-boat {
   -moz-transition: all 15s ease-in-out;
   -o-transition: all 15s ease-in-out;
@@ -534,7 +672,7 @@ g.move-boat {
   transition: all 15s ease-in-out;
 }
 
-/* line 191, _header.scss */
+/* line 288, _header.scss */
 g.right:hover ~ g.move-boat {
   -moz-transform: translate(50em, 0);
   -ms-transform: translate(50em, 0);
@@ -542,7 +680,7 @@ g.right:hover ~ g.move-boat {
   transform: translate(50em, 0);
 }
 
-/* line 195, _header.scss */
+/* line 292, _header.scss */
 g.left:hover ~ g.move-boat {
   -moz-transform: translate(-50em, 0);
   -ms-transform: translate(-50em, 0);
@@ -550,62 +688,62 @@ g.left:hover ~ g.move-boat {
   transform: translate(-50em, 0);
 }
 
-/* line 9, styles.scss */
+/* line 23, styles.scss */
 body {
   padding: 0;
   margin: 0;
 }
 
-/* line 14, styles.scss */
+/* line 28, styles.scss */
 .header_site-slogan {
   margin-left: 40px;
   font-weight: 200;
   font-family: Helvetica, sans-serif;
 }
 
-/* line 20, styles.scss */
+/* line 34, styles.scss */
 .region-header {
   /* Wrapper for any blocks placed in the header region */
   clear: both;
   /* Clear the logo */
   background-color: #B3DBEC;
 }
-/* line 24, styles.scss */
+/* line 38, styles.scss */
 .region-header.night-time {
   background-color: #2a83a9;
 }
-/* line 26, styles.scss */
+/* line 40, styles.scss */
 .region-header.night-time .block {
   opacity: 0.88;
 }
-/* line 28, styles.scss */
+/* line 42, styles.scss */
 .region-header.night-time .block:before {
   opacity: 0.4;
 }
-/* line 34, styles.scss */
+/* line 48, styles.scss */
 .region-header.morning-time {
   background-color: white;
 }
-/* line 36, styles.scss */
+/* line 50, styles.scss */
 .region-header.morning-time .block {
   opacity: 0.92;
 }
-/* line 38, styles.scss */
+/* line 52, styles.scss */
 .region-header.morning-time .block:before {
   opacity: 0.6;
 }
-/* line 41, styles.scss */
+/* line 55, styles.scss */
 .region-header.morning-time .block .header_site-slogan {
   color: #616f7b;
 }
-/* line 47, styles.scss */
+/* line 61, styles.scss */
 .region-header .block {
   position: relative;
   padding: 0;
   text-align: center;
   z-index: 2;
 }
-/* line 52, styles.scss */
+/* line 66, styles.scss */
 .region-header .block:before, .region-header .block:after {
   z-index: -1;
   top: 0;
@@ -620,23 +758,23 @@ body {
   -webkit-background-size: auto 100%;
   background-size: auto 100%;
 }
-/* line 63, styles.scss */
+/* line 77, styles.scss */
 .region-header .block:after {
   z-index: -1;
   background-image: url(../assets/px_header-background-summer.png);
 }
-/* line 68, styles.scss */
+/* line 82, styles.scss */
 .region-header .block p {
   margin: 0;
   padding: 0;
 }
-/* line 72, styles.scss */
+/* line 86, styles.scss */
 .region-header .block img {
   height: 20em;
   width: auto;
   vertical-align: bottom;
 }
-/* line 77, styles.scss */
+/* line 91, styles.scss */
 .region-header .block .header_site-slogan {
   position: absolute;
   top: 0.6em;

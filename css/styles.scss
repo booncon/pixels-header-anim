@@ -1,10 +1,24 @@
 @import "compass";
-@import "header";
+
 
 $px-blue-sky: #B3DBEC;
 $px-blue-dark:  rgb(97, 111, 123);
+$px-blue-light: lighten($px-blue-dark, 6%);
 $px-white: #ffffff;
+$px-blue-light-10: rgba($px-blue-light, 0.128);
+$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$helia:           "Helia", $arial, $verdana;
+$zen-gutter-width:  20px;
+$mq-mobile-landscape  : 480px !default;
+// Everything up to and including the mobile landscape width
+@mixin mobile-landscape-and-below {
+  @media only screen and (max-width : $mq-mobile-landscape) {
+    @content;
+  }
+}
 
+@import "header";
 
 body {
   padding: 0;
