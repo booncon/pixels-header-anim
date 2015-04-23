@@ -263,11 +263,11 @@
 
   <g class="display">
 
-      <rect x="583" y="650" fill="#C2C8CF" width="83" height="48"/>
+      <rect x="583" y="650" fill="#C2C8CF" width="83" height="80"/>
       <rect class="texture-h" x="583" y="650" fill="#C2C8CF" width="83" height="48"/>
       <path fill="#677889" d="M815,651.96c0,3.25-2.93,6.04-6.19,6.04h-357.7c-3.26,0-6.11-2.78-6.11-6.04V431.62 c0-3.25,2.85-5.62,6.11-5.62h357.7c3.25,0,6.19,2.36,6.19,5.62V651.96z"/>
       <rect class="header-display-screen" x="461" y="443" fill="#F1F1F3" width="338" height="198"/>
-      <path fill="#AEB3C1" d="M689.28,698c3.12,0,5.65,2.38,5.65,5.5l0,0c0,3.12-2.53,5.5-5.65,5.5H555.23c-3.12,0-5.65-2.38-5.65-5.5 l0,0c0-3.12,2.53-5.5,5.65-5.5H689.28z"/>
+      <rect x="583" y="713" fill="#AEB3C1" width="120" height="10"/>
   </g>
 
 
