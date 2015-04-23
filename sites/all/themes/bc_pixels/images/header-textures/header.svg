@@ -20,7 +20,7 @@
     <pattern id="texture45" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
       <image xlink:href="sites/all/themes/bc_pixels/images/header-textures/texture45.png" width="100" height="100" preserveAspectRatio="none"/>
     </pattern>
-      <pattern id="tree-texture-" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <pattern id="tree-texture" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">
       <image xlink:href="sites/all/themes/bc_pixels/images/header-textures/texture-tr.png" width="100" height="100" preserveAspectRatio="none"/>
     </pattern>
      <pattern id="boat-reflection1" width="1" height="1" viewBox="0 0 100 100" preserveAspectRatio="none">

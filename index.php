@@ -17,7 +17,7 @@
   		  opacity: 0.2;
   		}
   		.tree {
-  		  fill: url(#tree-texture-);
+  		  fill: url(#tree-texture);
   		  opacity: 0.5;
   		}
   		.texture-w {
